@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+
+    font-family: 'Noto Sans JP';
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    src: local("Noto Sans CJK JP"),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+
+ }
+
+ @font-face {
+
+    font-family: 'Noto Sans JP Medium';
+
+    font-style: normal;
+
+    font-weight: 500;
+
+    src: local("Noto Sans CJK JP"),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff2) format('woff2'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff) format('woff'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.otf) format('opentype');
+
+ }
+
+ @font-face {
+
+    font-family: 'Noto Sans JP DemiLight';
+
+    font-style: normal;
+
+    font-weight: 300;
+
+    src: local("Noto Sans CJK JP"),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.woff2) format('woff2'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.woff) format('woff'),
+
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.otf) format('opentype');
+
+ }
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+	color: #000;
+	font-size: 1.6rem;
+	font-feature-settings: "palt";
+	letter-spacing: 0.01em;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.inner{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 112px 0 120px;
+}
+.text-center{
+	text-align: center;
+}
+
+/*------------------------
+ *  header エリア
+ *-------------------------*/
+.header-inner{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.header{
+	background-image: url("../images/header/header-bg.png");
+	background-size: cover;
+	
+}
+.header-eyecatch{
+	min-width: 292px;
+	height: auto;
+	padding-left: 98px;
+}
+.header-info{
+	padding: 136px 98px 0;
+}
+.header__title{
+	color: #fff;
+	font-size: 7rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 48px;
+}
+.header-reading{
+	color: #fff;
+	font-size: 2.6rem;
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+.app-list{
+	display: flex;
+}
+.app-item{
+	float: left;
+	width: 114px;
+	
+}
+.app-item:first-of-type{
+	width: 138px;
+	margin-right: 24px;
+}
+/*
+
+.header{
+	background-image: url("../images/header/header-bg.png");
+	background-size: cover;
+	padding: 112px 0 120px;
+}
+.header-info{
+	float: right;
+	width: 554px;
+	padding-right: 98px;
+	padding-top: 136px;
+}
+.header-eyecatch{
+	float: left;
+	width: 292px;
+	padding: 0 98px;
+}
+
+.header__title{
+	color: #fff;
+	font-size: 7rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 48px;
+}
+.header-reading{
+	color: #fff;
+	font-size: 2.6rem;
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+.app-item{
+	float: left;
+	width: 114px;
+	margin-right: 24px;
+}
+.app-item:first-of-type{
+	width: 138px;
+}
+*/
+/*------------------------
+ *  whats tempwave エリア
+ *-------------------------*/
+.about .inner{
+	padding-bottom: 0;
+}
+.about-list{
+	display: flex;
+	position: absolute;
+}
+.about-title{
+	font-size: 6rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding-bottom: 88px;
+}
+.about-item{
+	width: calc(100%/3);
+	margin-right: 30px;
+}
+.about-item__info{
+	margin: 28px 0 56px;
+	font-size: 2.2rem;
+}
+.about-item__list:first-of-type{
+	margin-bottom: 20px;
+}
+.about-item__text{
+	line-height: 1.6;
+}
+.about-item__text:first-of-type{
+	margin-bottom: 20px;
+}
+.about-item__img{
+	position: relative;
+	overflow: hidden;
+	top: -140px;
+	left: 780px;
+}
+
+/*------------------------
+ * 　overlay エリア
+ *-------------------------*/
+.contents{
+	background-image: url("../images/section/bg-feature-pc.png");
+	background-position: center -110px;
+	background-repeat: no-repeat;
+	
+}
+.overlay{
+	
+	background-color: rgba(0,0,0,0.5)
+}
+.overlay>.inner{
+	padding-bottom: 160px;
+}
+.contents-box{
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 0 98px;
+}
+.contents-title{
+	margin-bottom: 16px;
+}
+.contents-list{
+	width: 262px;
+	color: #fff;
+}
+.contents .section-title{
+	font-size: 6rem;
+	margin-bottom: 88px;
+}
+.contents-text{
+	line-height: 1.6;
+}
+.contents-icon{
+	font-size: 5rem;
+	margin-bottom: 32px;
+}
+/*------------------------
+ * 　weather now エリア
+ *-------------------------*/
+.setting .section-title{
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 40px;
+	font-size: 6rem;
+}
+.setting-text{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	margin-bottom: 32px;
+}
+.setting-text:last-of-type{
+	margin-bottom: 64px;
+}
+.section-screen{
+	display: block;
+	padding-bottom: 96px;
+}
+.setting-box{
+	display: flex;
+}
+.setting-box.reverse{
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	
+}
+.setting-img{
+	margin: 0 98px;
+}
+.setting-paragraph{
+	width: 458px;
+	padding-top: 160px;
+	margin-right: 98px;
+}
+.setting-paragraph2{
+	width: 458px;
+	padding-top: 160px;
+	margin-left: 98px;
+}
+.setting-title{
+	font-size: 4.2rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 40px;
+}
+.setting-info{
+	line-height: 1.6;
+	margin-bottom: 32px;
+}
+.icon{
+	display: flex;
+	justify-content: space-between;
+}
+.icon-box{
+	width: 200px;
+}
+.icon-title{
+	display: block;
+	margin-bottom: 24px;
+}
+.icon-parts{
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.setting-img{
+	flex: none;
+}
+.br-reverse{
+	display: none;
+}
+/*------------------------
+ * 　footer エリア
+ *-------------------------*/
+.footer-inner{
+	background-image: url("../images/footer/bg-gra-top.png"), url("../images/footer/bg-gra-bottom.png");
+	background-repeat: repeat-x;
+	background-position: center top, center bottom;
+	padding: 112px 0 108px;
+}
+.footer-text{
+	font-size: 3.2rem;
+	margin-bottom: 32px;
+}
+.footer-icon{
+	width: 100px;
+	margin: 0 auto 32px;
+}
+.footer-subtitle{
+	font-size: 5.6rem;
+	margin-bottom: 16px;
+	font-family: "Open Sans Condensed";
+	font-weight: 300;
+}
+.footer-subtitle__download{
+	display: block;
+	font-size: 4rem;
+	padding-top: 24px;
+	margin-bottom: 32px;
+}
+.footer .app-list{
+	width: 290px;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width:640px){
+	.inner{
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		padding: 72px 20px 72px;
+	}
+	
+	/*------------------------
+	 * 　header エリア
+	 *-------------------------*/
+	.header{
+	background-image: url("../images/header/bg.png");
+	}
+	.header-inner{
+		display: block;
+		padding: 72px 20px 64px;
+	}
+	.header-info{
+		padding: 0;
+		padding-bottom: 36px;
+		text-align: center;
+	}
+	.header__title{
+		font-size: 6rem;
+	}
+	.header-reading{
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	.header-eyecatch{
+		min-width: initial;
+		width: 65.67%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.app-list{
+		width: 252px;
+		margin: auto;
+	}
+	.app-item{
+		width: 104px;
+	}
+	.app-item:first-of-type{
+		width: 122px;
+		margin-right: 18px;
+	}
+	/*------------------------
+	 * 　whats tempwave エリア
+	 *-------------------------*/
+	
+	.about-list{
+		display: block;
+		position: static;
+	}
+	.about-title{
+		font-size: 5rem;
+		padding-bottom: 40px;
+	}
+	.about-item{
+		width: 100%;
+		margin: 0 0 40px;
+	}
+	.about-item:last-of-type{
+		margin-bottom: 72px;
+	}
+	.about-item__info{
+		margin-bottom: 40px;
+	}
+	.about-item__text{
+		font-size: 1.5rem;
+	}
+	.about-item__img{
+		display: none;
+	}
+	
+	/*------------------------
+	 * 　overlay エリア
+	 *-------------------------*/
+	.overlay>.inner{
+		padding-bottom: 80px;
+	}
+	.contents-box{
+		display: block;
+		margin: 0 auto;
+		padding: 0 44px;
+	}
+	.contents-list{
+		padding: 0 0 56px;
+	}
+	.contents-list:last-of-type{
+		padding-bottom: 0;
+	}
+	.contents-icon{
+		font-size: 4rem;
+	}
+	/*------------------------
+	 * 　weather now エリア
+	 *-------------------------*/
+	.setting .section-title{
+		font-size: 4rem;
+	}
+	.setting .inner{
+		padding-bottom: 56px;
+	}
+	.setting-box{
+		display: block;
+	}
+	.setting-paragraph{
+		width: auto;
+		margin: 0;
+		padding: 0 20px;
+	}
+	.setting-paragraph2{
+		width: auto;
+		padding: 0;
+		margin: 0 0 24px;
+	}
+	.section-screen{
+		padding-bottom: 72px;
+	}
+	.setting-text{
+		font-size: 1.2rem;
+	}
+	.setting-info{
+		font-size: 1.2rem;
+	}
+	.br-reverse{
+		display: block;
+	}
+	.setting-img{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.icon-title{
+		font-size: 1.2rem;
+	}
+	.icon-parts{
+		width: 65px;
+	}
+
+	/*------------------------
+	 * 　footer エリア
+	 *-------------------------*/
+	.footer-inner{
+		padding: 72px 0 56px;
+		border-bottom: solid 50px #353434;
+	}
+	.footer-text{
+		font-size: 1.8rem;
+		margin-bottom: 24px;
+	}
+	.footer-icon{
+		width: 72px;
+		margin-bottom: 24px;
+	}
+	.footer-subtitle{
+		font-size: 3.2rem;
+	}
+	.footer-subtitle__download{
+		font-size: 2.2rem;
+		padding-top: 16px;
+		margin-bottom: 24px;
+	}
+	.footer .app-list{
+		width: 244px;
+		margin: 0 auto;
+	}
+	
+	
+	
+}
