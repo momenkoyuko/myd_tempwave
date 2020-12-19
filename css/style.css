@@ -125,47 +125,7 @@ img{
 	width: 138px;
 	margin-right: 24px;
 }
-/*
 
-.header{
-	background-image: url("../images/header/header-bg.png");
-	background-size: cover;
-	padding: 112px 0 120px;
-}
-.header-info{
-	float: right;
-	width: 554px;
-	padding-right: 98px;
-	padding-top: 136px;
-}
-.header-eyecatch{
-	float: left;
-	width: 292px;
-	padding: 0 98px;
-}
-
-.header__title{
-	color: #fff;
-	font-size: 7rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	margin-bottom: 48px;
-}
-.header-reading{
-	color: #fff;
-	font-size: 2.6rem;
-	line-height: 1.6;
-	margin-bottom: 40px;
-}
-.app-item{
-	float: left;
-	width: 114px;
-	margin-right: 24px;
-}
-.app-item:first-of-type{
-	width: 138px;
-}
-*/
 /*------------------------
  *  whats tempwave エリア
  *-------------------------*/
@@ -452,8 +412,11 @@ img{
 	/*------------------------
 	 * 　weather now エリア
 	 *-------------------------*/
+	.contents{
+		background-position: center 20px;
+	}
 	.setting .section-title{
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 	.setting .inner{
 		padding-bottom: 56px;
@@ -475,10 +438,10 @@ img{
 		padding-bottom: 72px;
 	}
 	.setting-text{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	.setting-info{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	.br-reverse{
 		display: block;
